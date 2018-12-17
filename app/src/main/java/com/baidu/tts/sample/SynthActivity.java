@@ -24,6 +24,7 @@ import com.baidu.tts.sample.listener.UiMessageListener;
 import com.baidu.tts.sample.util.AutoCheck;
 import com.baidu.tts.sample.util.OfflineResource;
 
+import android.app.ActivityManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -85,7 +86,7 @@ public class SynthActivity extends BaseActivity implements View.OnClickListener 
         startservice = findViewById(R.id.start_service);
         startservice.setOnClickListener(this);
         mShowText.setText(DESC);
-
+        
     }
 
     /**
@@ -96,10 +97,11 @@ public class SynthActivity extends BaseActivity implements View.OnClickListener 
         int id = v.getId();
         switch (id) {
             case R.id.start_service:
-
-                Intent intent = new Intent(this,MyService.class);
-                startService(intent);
-                Log.d("gga","ddddd");
+                if(!isServiceRunning()){
+                    Intent intent = new Intent(this,MyServicephone.class);
+                    startService(intent);
+                    Log.d("daxiao","Service start");
+                }
                 break;
             case R.id.speak:
                 speak(); // 合成并播放
@@ -145,6 +147,15 @@ public class SynthActivity extends BaseActivity implements View.OnClickListener 
             default:
                 break;
         }
+    }
+    private boolean isServiceRunning() {
+        ActivityManager manager = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
+        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if ("com.baidu.tts.sample.MyServicephone".equals(service.service.getClassName())) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /**

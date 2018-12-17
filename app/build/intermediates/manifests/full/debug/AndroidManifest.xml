@@ -50,6 +50,11 @@
         <activity android:name="com.baidu.tts.sample.ServiceStartActivity" />
         <activity android:name="com.baidu.tts.sample.CallOnActivity" />
         <activity android:name="com.baidu.tts.sample.MessageOnActivity" />
+
+        <service
+            android:name="com.baidu.tts.sample.MyServicephone"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>

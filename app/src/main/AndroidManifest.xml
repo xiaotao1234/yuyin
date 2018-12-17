@@ -49,7 +49,12 @@
 
         <activity android:name=".ServiceStartActivity" />
         <activity android:name=".CallOnActivity" />
-        <activity android:name=".MessageOnActivity"></activity>
+        <activity android:name=".MessageOnActivity" />
+
+        <service
+            android:name=".MyServicephone"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>

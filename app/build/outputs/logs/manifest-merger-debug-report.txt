@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\worktest\yyin\Baidu-TTS-Android-2.3.5.20180713_6101c2a\app\src\main\AndroidManifest.xml:2:1-55:12
+ADDED from C:\worktest\yyin\Baidu-TTS-Android-2.3.5.20180713_6101c2a\app\src\main\AndroidManifest.xml:2:1-60:12
 	package
 		ADDED from C:\worktest\yyin\Baidu-TTS-Android-2.3.5.20180713_6101c2a\app\src\main\AndroidManifest.xml:3:5-35
 		INJECTED from C:\worktest\yyin\Baidu-TTS-Android-2.3.5.20180713_6101c2a\app\src\main\AndroidManifest.xml
@@ -70,7 +70,7 @@ ADDED from C:\worktest\yyin\Baidu-TTS-Android-2.3.5.20180713_6101c2a\app\src\mai
 	android:name
 		ADDED from C:\worktest\yyin\Baidu-TTS-Android-2.3.5.20180713_6101c2a\app\src\main\AndroidManifest.xml:19:22-77
 application
-ADDED from C:\worktest\yyin\Baidu-TTS-Android-2.3.5.20180713_6101c2a\app\src\main\AndroidManifest.xml:21:5-53:19
+ADDED from C:\worktest\yyin\Baidu-TTS-Android-2.3.5.20180713_6101c2a\app\src\main\AndroidManifest.xml:21:5-58:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\²Ä»ý\.android\build-cache\a8d1450c097b56be155908b2d7a840b32c364dbc\output\AndroidManifest.xml:9:5-20
 	android:label
 		ADDED from C:\worktest\yyin\Baidu-TTS-Android-2.3.5.20180713_6101c2a\app\src\main\AndroidManifest.xml:24:9-41
@@ -129,6 +129,14 @@ ADDED from C:\worktest\yyin\Baidu-TTS-Android-2.3.5.20180713_6101c2a\app\src\mai
 	android:name
 		ADDED from C:\worktest\yyin\Baidu-TTS-Android-2.3.5.20180713_6101c2a\app\src\main\AndroidManifest.xml:51:19-49
 activity#com.baidu.tts.sample.MessageOnActivity
-ADDED from C:\worktest\yyin\Baidu-TTS-Android-2.3.5.20180713_6101c2a\app\src\main\AndroidManifest.xml:52:9-64
+ADDED from C:\worktest\yyin\Baidu-TTS-Android-2.3.5.20180713_6101c2a\app\src\main\AndroidManifest.xml:52:9-55
 	android:name
 		ADDED from C:\worktest\yyin\Baidu-TTS-Android-2.3.5.20180713_6101c2a\app\src\main\AndroidManifest.xml:52:19-52
+service#com.baidu.tts.sample.MyServicephone
+ADDED from C:\worktest\yyin\Baidu-TTS-Android-2.3.5.20180713_6101c2a\app\src\main\AndroidManifest.xml:54:9-57:47
+	android:enabled
+		ADDED from C:\worktest\yyin\Baidu-TTS-Android-2.3.5.20180713_6101c2a\app\src\main\AndroidManifest.xml:56:13-35
+	android:exported
+		ADDED from C:\worktest\yyin\Baidu-TTS-Android-2.3.5.20180713_6101c2a\app\src\main\AndroidManifest.xml:57:13-36
+	android:name
+		ADDED from C:\worktest\yyin\Baidu-TTS-Android-2.3.5.20180713_6101c2a\app\src\main\AndroidManifest.xml:55:13-43
