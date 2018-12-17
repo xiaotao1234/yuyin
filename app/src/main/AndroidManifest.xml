@@ -26,11 +26,6 @@
         <activity android:name=".MainActivity">
 
             <!-- 这里改成MiniActivity 或者 SynthActivity 可以直接启动识别 -->
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".SynthActivity"
@@ -47,8 +42,16 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".ServiceStartActivity" />
-        <activity android:name=".CallOnActivity" />
+        <activity android:name=".ServiceStartActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CallOnActivity" >
+
+        </activity>
         <activity android:name=".MessageOnActivity" />
 
         <service

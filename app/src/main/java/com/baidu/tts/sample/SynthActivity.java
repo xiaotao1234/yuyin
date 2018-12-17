@@ -86,7 +86,7 @@ public class SynthActivity extends BaseActivity implements View.OnClickListener 
         startservice = findViewById(R.id.start_service);
         startservice.setOnClickListener(this);
         mShowText.setText(DESC);
-        
+
     }
 
     /**
@@ -339,7 +339,7 @@ public class SynthActivity extends BaseActivity implements View.OnClickListener 
 
     @Override
     protected void onDestroy() {
-        synthesizer.release();
+//        synthesizer.release();
         Log.i(TAG, "释放资源成功");
         super.onDestroy();
     }
